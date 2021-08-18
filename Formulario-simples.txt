@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="formulario teste/favicon.ico" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: 20ptbr Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(218, 168, 6), rgb(17,54,71));
+
+        }
+        /*body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }*/
+
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);     /*Serve hustamente para centralizar o box*/
+            background-color: rgba(99, 241, 111, 0.6); /* serve para colocar uma cor de fundo dentro d box*/
+            padding: 15px; /* Serve para colocar uma pequena borda ao redor da caixa*/
+            border-radius: 15px; /* serve para arrendodar a borda do box*/
+            width: 20%; /* serve para aumentar a largura*/
+            color: white;
+
+        }
+        fieldset{
+            border: 3px solid rgb(255, 146, 231);
+            
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(240, 163, 240);
+            border-radius: 5px;
+            color: black;
+            font-size: 20px;
+                      
+
+        }
+        .inputbox{
+            position:relative
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 4px; /* serve para aumentar o espaço entre os caracteres*/
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5px;
+
+        }
+        .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+          top: -20px;
+          font-size: 12px;
+          color: black;  
+
+        }
+        #nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            color: blue;
+            
+        }
+        #submit{
+            background-image: linear-gradient(to left, rgb(218, 168, 6), rgb(17,54,71));
+            width: 100%;
+            border:none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to left, rgb(212, 174, 47), rgb(34, 83, 105));
+
+        }
+
+        h1{
+            text-align:left ;
+            font-size: 25px;
+                        
+        }
+        p{
+            text-align: left;
+
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <h1><strong>Formulário simples - apenas para uso didático</strong></h1>
+    <p>Esse é um trabalho para treinar o conhecimento referente a criação de uma <br>
+         página html simples. </p>
+<div class="box">
+    <form action="">
+        <fieldset>
+            <legend><strong>Formulário Simples</strong></legend>
+            <br>
+        
+            <div class="inputbox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div>
+            <br>
+            
+            <div class="inputbox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">E-mail</label>
+            </div>
+           
+            <br>
+            <div class="inputbox">
+                <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone" class="labelInput">Telefone</label>
+            </div>
+           
+            <br>
+            <p><strong>Sexo</strong></p>
+            
+            <input type="radio" name="genero" id="feminino" value="feminino" required>
+            <label for="feminino">feminino</label>
+            <br>
+           
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <br>
+           
+            <input type="radio" name="genero" id="outros" value="outros" required>
+            <label for="outros">Outros</label>
+            <br>
+           <br>
+            <div class="inputbox">
+                <label for="nascimento"><strong>Data de nascimento</strong></label>
+                <input type="date" name="nascimento" id="nascimento" class="inputUser" required>                
+            </div>
+            <br>
+                  
+
+            <div class="inputbox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div>
+            <br>
+          
+            <div class="inputbox">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado</label>
+            </div>
+            <br>
+          
+            <div class="inputbox">
+                <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço</label>
+            </div>
+            <br>
+         
+            <input type="submit" id="submit" name="submit">
+
+
+
+
+
+
+        </fieldset>
+
+    </form>
+</div>
+
+    
+    
+</body>
+</html>
