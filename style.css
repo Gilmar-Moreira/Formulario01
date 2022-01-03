@@ -1,0 +1,173 @@
+       
+        /* body{
+            font-family: 20ptbr Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(218, 168, 6), rgb(17,54,71));
+
+        } */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            width: 80%; 
+            margin: 0 auto; 
+        }
+
+
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            padding: 0px;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+
+
+        }
+
+       .x2x{
+           background-color: #f2f2f2;
+           font-family: Montserrat;
+           padding: 2rem;
+           border: none;
+           border-radius: 1.2rem;
+           margin-bottom: 3rem;
+
+
+       }
+
+       .box{
+            background-color:#f2f2f2; 
+            padding: 2rem;
+            border-radius: 1.2rem 1.2rem 0 0;
+                      
+
+
+       }
+
+       .box{
+
+       }
+
+        /*.box{
+            position:static;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);     /*Serve hustamente para centralizar o box*/
+           /* background-color: rgba(99, 241, 111, 0.6); /* serve para colocar uma cor de fundo dentro d box*/
+          /*  padding: 15px; /* Serve para colocar uma pequena borda ao redor da caixa*/
+           /* border-radius: 15px; /* serve para arrendodar a borda do box*/
+            /*width: 20%; /* serve para aumentar a largura*/
+            /*color: white;
+
+        }
+        */
+        
+        fieldset{
+            border: 3px solid rgb(255, 146, 231);
+           
+        }
+        legend, .inputbox{
+            padding: 1rem;
+            margin: 1rem; 
+
+                                   
+        }
+        legend{
+            
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(240, 163, 240);
+            border-radius: 5px;
+            color: black;
+            font-size: 20px;
+                      
+
+        }
+        .inputbox{
+            position:relative
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: rgb(8, 8, 8);
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 4px; /* serve para aumentar o espaço entre os caracteres*/
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5px;
+
+        }
+        .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+          top: -20px;
+          font-size: 12px;
+          color: black;  
+
+        }
+        #nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            color: blue;
+            
+        }
+        #submit{
+            
+            width: 100%;
+            border:none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        #submit:hover{
+            opacity: 0.8;
+            transition: .3s;
+
+  
+        }
+
+        h1{
+            text-align:left ;
+            font-size: 25px;
+                        
+        }
+        p{
+            text-align: left;
+
+        }
+
+
+        .final{
+        text-align: center;
+        }
+
+        footer{
+            padding: 1rem;
+            text-align: center;
+            background-color: #f2f2f2;
+            border-radius: 1.2rem;
+            border-radius: 0 0 1.2rem 1.2rem;
+            margin: 0 0 3rem 0;
+
+        }
+
+        @media(max-width: 769px){
+               body{
+                   width: 100%;
+               }     
+        }
+
+    
