@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="formulario teste/favicon.ico" type="image/x-icon">
+    <title>Formulario</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+
+<body>
+   
+    <header class="x2x">
+        
+        <h1><strong>Formulário simples - apenas para uso didático</strong></h1>
+        <p>Esse é um trabalho para treinar o conhecimento referente a criação de uma
+            página html simples. </p>
+    
+  
+    </header>
+    <main>
+
+    <div class="box">
+    <form action="">
+    <fieldset>
+        <legend><strong>Formulário Simples</strong></legend>
+        <br>
+
+        <div  class="inputbox">
+            <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome completo" required>
+            <label for="nome" class="labelInput sr-only"   >Nome completo</label>
+        </div>
+        <br>
+        
+        <div class="inputbox">
+            <input type="text" name="email" id="email" class="inputUser" placeholder="E-mail" required>
+            <label for="email" class="labelInput sr-only"  >E-mail</label>
+        </div>
+        
+        <br>
+        <div class="inputbox">
+            <input type="text" name="telefone" id="telefone" class="inputUser "  placeholder="Telefone"required>
+            <label for="telefone" class="labelInput sr-only">Telefone</label>
+        </div>
+        
+        <br>
+        <p><strong>Sexo</strong></p>
+        
+        <input type="radio" name="genero" id="feminino" value="feminino" required>
+        <label for="feminino">feminino</label>
+        <br>
+        
+        <input type="radio" name="genero" id="masculino" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <br>
+        
+        <input type="radio" name="genero" id="outros" value="outros" required>
+        <label for="outros">Outros</label>
+        <br>
+        <br>
+        <div class="inputbox">
+            <label for="nascimento"><strong>Data de nascimento</strong></label>
+            <input type="date" name="nascimento" id="nascimento" class="inputUser" required>                
+        </div>
+        <br>
+                
+
+        <div class="inputbox">
+            <input type="text" name="cidade" id="cidade" class="inputUser "  placeholder="Cidade" required>
+            <label for="cidade" class="labelInput sr-only">Cidade</label>
+        </div>
+        <br>
+        
+        <div class="inputbox">
+            <input type="text" name="estado" id="estado" class="inputUser "  placeholder="Estado" required>
+            <label for="estado" class="labelInput sr-only">Estado</label>
+        </div>
+        <br>
+        
+        <div class="inputbox">
+            <input type="text" name="endereco" id="endereco" class="inputUser "   placeholder="Endereço"required>
+            <label for="endereco" class="labelInput sr-only">Endereço</label>
+        </div>
+        <br>
+        
+        <input type="submit" id="submit" name="submit">
+
+
+
+
+
+
+    </fieldset>
+
+    </form>
+    </div> 
+    </main>
+    <footer>
+       <p class="final">Formulário 2021</p>
+      
+       
+    </footer>
+    
+</body>
+</html>
